@@ -3,8 +3,6 @@
 # Escreva na tela primeiro o sobrenome e depois
 # o nome usando o f-string
 
-print ("Informe seu nome: ")
-nome = input
-print ("Informe seu sobrenome: ")
-sobrenome = input
-print (f"{nome} {sobrenome}")
+nome = input("Informe seu nome: ")
+sobrenome = input("Informe seu sobrenome: ")
+print (f"{sobrenome}, {nome}")

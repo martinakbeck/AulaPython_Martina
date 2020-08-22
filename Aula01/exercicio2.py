@@ -6,3 +6,8 @@ Martina
 Keunecke
 Beck
 """)
+
+print ('Keunecke Beck\nMartina')
+
+print('Keunecke Beck')
+print('Martina')
