@@ -24,37 +24,37 @@ lista = [[1, 'Raimundo', 40, 'f', 'pacheco_k81@hotmail.com', '033901987190'], [2
 
 # Usando a lista, separe as pessoas com 31 anos e com sexo masculino e conte quantas pessoas.
 
-contador_m = 0
-contador_f = 0
-contador_menor = 0
-for pessoa in lista:
-    if pessoa[2] >= 18 and pessoa [3] == 'm':
-        contador_m = contador_m + 1
-        print(pessoa)
-print (contador_m)
-
-for pessoa in lista:
-    if pessoa [2] >= 18 and pessoa [3] == 'f':
-        contador_f = contador_f + 1
-        print(pessoa)
-print (contador_f)
-
-for pessoa in lista:
-    if pessoa [2] < 18:
-        contador_menor = contador_menor + 1
-        print (pessoa)
-
-print ()
-print(f'''Total maiores de 18 anos masculino: {contador_m}
-Total maiores de 18 anos feminino: {contador_f}
-Total menores de 18 anos: {contador_menor}''')       
+# contador = 0
+# for pessoa in lista:
+#     #print(pessoa)
+#     # [1, 'Raimundo', 40, 'f', 'pacheco_k81@hotmail.com', '033901987190']
+#     if pessoa[2] == 31 and pessoa[3] == 'm': #selecione sexo masculino e 31 anos
+#         contador = contador + 1 # contando quantas pessoas tem
+#         print(pessoa)
         
+# print(contador)
 
+# separando e conte masculino e feminino maiores de 18 anos.
+# [1, 'Raimundo', 40, 'f', 'pacheco_k81@hotmail.com', '033901987190']
+#  0,     1     , 2 ,  3, ...
+homi = []
+dama = []
+con_m = 0
+con_f = 0
+for pessoa in lista:
+    if pessoa[2] >= 18 and pessoa[3] == 'm':
+        con_m = con_m + 1
+        homi.append(pessoa)
+    elif pessoa[2] >= 18 and pessoa[3] == 'f':
+        dama.append(pessoa)
+        con_f = con_f + 1
 
+# Mostrando os dados
+for i in homi:
+    print(i)
+print("\n")
+for i in dama:
+    print(i)
 
-
-
-
-
-
-
+print(f"\nA quantidade de homens é: {con_m} é igul a {len(homi)}")
+print(f"\nA quantidade de mulheres é: {con_f} é igul a {len(dama)}")
